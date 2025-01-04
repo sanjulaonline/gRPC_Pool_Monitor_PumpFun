@@ -116,12 +116,7 @@ class PumpMonitor:
         print(f"Mint: {mint}\n")
 
     async def start_monitoring(self) -> None:
-        """
-        Start monitoring for Pump.fun transactions.
-
-        Raises:
-            grpc.RpcError: If gRPC communication fails
-        """
+       
         try:
             responses = self.stub.Subscribe(self.request_iterator())
             for response in responses:
