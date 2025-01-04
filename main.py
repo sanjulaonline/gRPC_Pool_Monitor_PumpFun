@@ -21,7 +21,7 @@ class PumpMonitor:
 
     PUMP_FUN_ACCOUNT = '6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P'
     PUMP_INSTRUCTION_PREFIX = bytes([24, 30, 200, 40, 5, 28, 7, 119])
-    COMMITMENT_LEVEL = geyser_pb2.CommitmentLevel.CONFIRMED
+    COMMITMENT_LEVEL = geyser_pb2.CommitmentLevel.PROCESSED
 
     def __init__(self, endpoint: str, token: str) -> None:
         """
