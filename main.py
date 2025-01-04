@@ -110,7 +110,7 @@ class PumpMonitor:
             slot: Transaction slot
             mint: Mint address
         """
-        print(f"\nNew Pump.fun Mint!")
+        print(f"\nNew Pump.fun token released!")
         print(f"Signature: {signature}")
         print(f"Slot: {slot}")
         print(f"Mint: {mint}\n")
